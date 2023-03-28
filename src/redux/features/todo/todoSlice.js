@@ -71,7 +71,7 @@ const todoSlice = createSlice({
     // complete all todo and clear completed
     allCompleted: (state) => {
       state.todoList.map((todo) => {
-        todo.completed = !todo.completed;
+        todo.completed = true;
         // console.log(todo.completed);
       });
       localStorage.setItem("todos", JSON.stringify(state.todoList));
